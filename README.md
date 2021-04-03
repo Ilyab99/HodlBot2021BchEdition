@@ -6,4 +6,4 @@ Bitcoin.com has an open API so I guess this is a continuation of that project. A
 This is how it's meant to look:
 
 [![IMG-20210403-173050.jpg](https://i.postimg.cc/brfppX94/IMG-20210403-173050.jpg)](https://postimg.cc/G8KZx5Nj)
-[IMG-20210403-173050.jpg](https://postimg.cc/G8KZx5Nj)
+
