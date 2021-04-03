@@ -1,7 +1,7 @@
 import time
 import I2C_LCD_driver
 import requests
-eth_address = "bitcoincash:qzs02v05l7qs5s24srqju498qu55dwuj0cx5ehjm2c"  # your ethereum address goes here
+eth_address = "bitcoincash:qzs02v05l7qs5s24srqju498qu55dwuj0cx5ehjm2c"  # your bitcoin cash address goes here 
 site = "https://rest.bitcoin.com/v2/address/details/"
 mylcd = I2C_LCD_driver.lcd()
 
@@ -17,10 +17,8 @@ res = requests.get(final_site,hdr)
 
 jsondata = res.json()
 h = 'BCH 4 LYF'
-#print(jsondata)
+
 print(jsondata['balance'])
-#print(res.status_code)
-x = 0
 mylcd.lcd_display_string(h,2)
 while 1==1:
 	print(x)
@@ -28,6 +26,5 @@ while 1==1:
 	jsondata = res.json()
 	balance = str(jsondata['balance'])
 	mylcd.lcd_display_string(balance, 1)
-
 	time.sleep(5)
-	x= x+1
+	
